@@ -1,0 +1,5 @@
+Makefile.PL
+MANIFEST
+README
+t/Catalyst-Log-WithDumper.t
+lib/Catalyst/Log/WithDumper.pm

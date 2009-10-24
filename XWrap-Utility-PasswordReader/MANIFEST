@@ -1,0 +1,8 @@
+Makefile.PL
+MANIFEST
+README
+t/XWrap-Utility-PasswordReader.t
+lib/XWrap/Utility/PasswordReader.pm
+lib/XWrap/Utility/CatalystPassword.pm
+bin/pwread
+bin/pwwrite
