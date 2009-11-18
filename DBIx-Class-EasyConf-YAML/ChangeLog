@@ -1,0 +1,4 @@
+2009-11-18  Kevin Montuori  <montuori@marcie.local>
+
+	* Changes: added deps in Makefile.PL; added Object::Enum test
+

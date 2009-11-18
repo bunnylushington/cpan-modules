@@ -5,8 +5,10 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME              => 'DBIx::Class::EasyConf::YAML',
     VERSION_FROM      => 'lib/DBIx/Class/EasyConf/YAML.pm', # finds $VERSION
-    PREREQ_PM         => {}, # e.g., Module::Name => 1.1
-    ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
-      (ABSTRACT_FROM  => 'lib/DBIx/Class/EasyConf/YAML.pm', # retrieve abstract from module
-       AUTHOR         => 'Kevin Montuori <montuori@apple.com>') : ()),
+    PREREQ_PM         => { DBIx::Class                              => 0,
+			   DBIx::Class::InflateColumn::Object::Enum => 0,
+			   YAML                                     => 0 },
+    ($] >= 5.005 ?     
+      (ABSTRACT_FROM  => 'lib/DBIx/Class/EasyConf/YAML.pm', 
+       AUTHOR         => 'Kevin Montuori <montuori@gmail.com>') : ()),
 );
